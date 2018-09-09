@@ -1,0 +1,25 @@
+{
+  "name": "mean-contactlist",
+  "version": "1.0.0",
+  "description": "Contact List Or Address Book using Mongo, Express, Angular5, NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdzakir/MEAN-ContactList.git"
+  },
+  "author": "ZakirMuhammad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdzakir/MEAN-ContactList/issues"
+  },
+  "homepage": "https://github.com/mdzakir/MEAN-ContactList#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.13"
+  }
+}

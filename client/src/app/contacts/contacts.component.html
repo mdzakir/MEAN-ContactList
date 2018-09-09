@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 ">
+<div class="card bg-light mb-3" style="max-width: 20rem;">
+  <div class="card-header">Add Contact</div>
+<div class="card-body">
+      <form (submit)="addContact()" class="well">
+        <input type="text" class="form-control" name="first_name" placeholder="First name" [(ngModel)]="first_name" />
+        <input type="text" class="form-control" name="last_name" placeholder="Last name" [(ngModel)]="last_name" />
+        <input type="text" class="form-control" name="contact_number" placeholder="Contact number" [(ngModel)]="contact_number" />
+        <button class="btn btn-success" type="submit">Save</button>
+      </form>
+</div>
+</div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container">
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Contact Number</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td >
+          {{contact.first_name}}
+        </td>
+        <td >
+          {{contact.last_name}}
+        </td>
+        <td >
+          {{contact.contact_number}}
+        </td>
+        <td>
+          <button type="button" (click)="deleteContact(contact._id)" class="btn btn-danger">Delete</button>
+        </td>
+      <tr>
+    </tbody>
+  </table>
+</div>
